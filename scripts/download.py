@@ -28,7 +28,7 @@ def download_from_hub(repo_id: Optional[str] = None, token: Optional[str] = os.g
 
     snapshot_download(
         repo_id,
-        local_dir=f"checkpoints/{repo_id}",
+        local_dir=f"/kaggle/temp/checkpoints/{repo_id}",
         local_dir_use_symlinks=False,
         resume_download=True,
         allow_patterns=["*.bin*", "tokenizer*"],
