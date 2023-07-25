@@ -34,7 +34,7 @@ override_max_seq_length = None
 
 # Hyperparameters
 learning_rate = 3e-3
-batch_size = 64 / devices
+batch_size = 32 / devices
 micro_batch_size = 1  # set to 2 because this is fit into 12GB Vram
 gradient_accumulation_iters = batch_size // micro_batch_size
 assert gradient_accumulation_iters > 0
